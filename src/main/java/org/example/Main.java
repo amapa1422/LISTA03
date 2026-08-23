@@ -33,12 +33,26 @@ public class Main {
 
         Geladeira geladeira =  new Geladeira();
         Microondas microondas = new Microondas();
-        
+
         geladeira.Ligar();
         geladeira.Desligar();
         microondas.Ligar();
         microondas.Desligar();
         l("");
+
+        Quadrado quadrado = new Quadrado();
+        Circulo circulo = new Circulo();
+
+        quadrado.CalcularArea();
+        circulo.CalcularArea();
+        l("");
+
+        Gerente gerente = new Gerente();
+        Programador programador = new Programador();
+
+        gerente.CalcularSalario();
+        programador.CalcularSalario();
+
 
 
 
