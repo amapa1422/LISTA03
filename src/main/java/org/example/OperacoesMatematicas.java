@@ -6,4 +6,8 @@ public interface OperacoesMatematicas {
     void Subtrair();
     void Multiplicar();
     void Dividir();
+
+    default void Potencial() {
+        System.out.println("Calculando potencia ");
+    }
 }

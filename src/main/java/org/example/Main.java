@@ -42,6 +42,8 @@ public class Main {
         microondas.Ligar();
         microondas.Desligar();
         p("");
+        microondas.VerificarEstado();
+        p("");
         l("");
 
 
@@ -72,11 +74,19 @@ public class Main {
         l("");
 
         Calculadora calculadora = new Calculadora();
+        CalculadoraCientifica calculadoraCientifica = new CalculadoraCientifica();
 
         calculadora.Somar();
         calculadora.Subtrair();
         calculadora.Multiplicar();
         calculadora.Dividir();
+        p("");
+        calculadoraCientifica.Somar();
+        calculadoraCientifica.Subtrair();
+        calculadoraCientifica.Multiplicar();
+        calculadoraCientifica.Dividir();
+        calculadoraCientifica.Potencial();
+
         p("");
         l("");
 
@@ -85,6 +95,8 @@ public class Main {
 
         documento.Imprimir();
         imagem.Imprimir();
+        documento.MostrarMonitor();
+
         p("");
         l("");
 
@@ -92,7 +104,69 @@ public class Main {
 
         passaro.Comer();
         passaro.Voar();
+        passaro.dormir();
+        p("");
+        l("");
 
+        Xadrez xadrez = new Xadrez();
+        Futebol futebol = new Futebol();
+
+        xadrez.IniciarJogo();
+        futebol.IniciarJogo();
+        p("");
+        l("");
+
+        CartaoDeCredito cartaoDeCredito = new CartaoDeCredito();
+        Boleto boleto = new Boleto();
+        Pix pix = new Pix();
+
+        cartaoDeCredito.Pagar();
+        boleto.Pagar();
+        pix.Pagar();
+        p("");
+
+        cartaoDeCredito.CancelarPagamento();
+        pix.CancelarPagamento();
+
+
+        p("");
+        l("");
+
+        ArquivoDeTexto arquivoDeTexto = new ArquivoDeTexto();
+        BancoDeDados bancoDeDados = new BancoDeDados();
+
+        arquivoDeTexto.Carregar();
+        arquivoDeTexto.Salvar();
+        p("");
+        bancoDeDados.Carregar();
+        bancoDeDados.Salvar();
+        p("");
+        l("");
+
+        SensorDeTemperatura sensorDeTemperatura = new SensorDeTemperatura();
+        SensorDePressao sensorDePressao = new SensorDePressao();
+
+        sensorDeTemperatura.MedirTemperatura();
+        sensorDePressao.MedirTemperatura();
+        p("");
+        l("");
+
+        Televisao televisao = new Televisao();
+
+        televisao.AumentarVolume();
+        televisao.DiminuirVolume();
+        p("");
+        l("");
+
+        Temperatura temperatura = new Temperatura();
+
+        System.out.println(temperatura.converter(30));
+        p("");
+        l("");
+
+        ContaPoupanca contaPoupanca = new ContaPoupanca();
+
+        System.out.println("Taxa de juros " + contaPoupanca.taxaJuros() + "%");
 
     }
 }
