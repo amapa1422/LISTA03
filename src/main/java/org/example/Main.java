@@ -168,5 +168,44 @@ public class Main {
 
         System.out.println("Taxa de juros " + contaPoupanca.taxaJuros() + "%");
 
+        Matematica matematica = new Matematica();
+
+        System.out.println(matematica.CalcularFatorial(5));
+        p("");
+        l("");
+
+        Usuario usuario = new Usuario();
+
+        System.out.println(usuario.mensagem());
+        p("");
+        l("");
+
+        Relogio relogio = new Relogio();
+
+        System.out.println("Hora atual: " + relogio.HoraAtual());
+
+        p("");
+        l("");
+
+        Youtube youtube = new Youtube();
+        Twitch twitch = new Twitch();
+
+        youtube.IniciarTransmissao();
+        youtube.FinalizarTransmissao();
+        p("");
+        twitch.IniciarTransmissao();
+        twitch.FinalizarTransmissao();
+        p("");
+        l("");
+
+        UsuarioSistema usuarioo = new UsuarioSistema();
+        Administrador administrador = new Administrador();
+
+        usuarioo.Login();
+        usuarioo.Logout();
+        p("");
+        administrador.Login();
+        administrador.Logout();
+
     }
 }
