@@ -1,7 +1,8 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import javax.print.Doc;
+
 public class Main {
 
     public static void p(String texto)
@@ -22,6 +23,7 @@ public class Main {
 
         carro.Acelerar();
         moto.Acelerar();
+        p("");
         l("");
 
         Violao violao = new Violao();
@@ -29,6 +31,7 @@ public class Main {
 
         violao.Tocar();
         piano.Tocar();
+        p("");
         l("");
 
         Geladeira geladeira =  new Geladeira();
@@ -38,22 +41,57 @@ public class Main {
         geladeira.Desligar();
         microondas.Ligar();
         microondas.Desligar();
+        p("");
         l("");
+
 
         Quadrado quadrado = new Quadrado();
         Circulo circulo = new Circulo();
 
         quadrado.CalcularArea();
         circulo.CalcularArea();
+        p("");
         l("");
+
 
         Gerente gerente = new Gerente();
         Programador programador = new Programador();
 
         gerente.CalcularSalario();
         programador.CalcularSalario();
+        p("");
+        l("");
 
 
+        ContaCorrente contaCorrente = new ContaCorrente();
+
+        contaCorrente.Sacar();
+        contaCorrente.Depositar();
+        contaCorrente.VerSaldo();
+        p("");
+        l("");
+
+        Calculadora calculadora = new Calculadora();
+
+        calculadora.Somar();
+        calculadora.Subtrair();
+        calculadora.Multiplicar();
+        calculadora.Dividir();
+        p("");
+        l("");
+
+        Documento documento = new Documento();
+        Imagem imagem = new Imagem();
+
+        documento.Imprimir();
+        imagem.Imprimir();
+        p("");
+        l("");
+
+        Passaro passaro = new Passaro();
+
+        passaro.Comer();
+        passaro.Voar();
 
 
     }
