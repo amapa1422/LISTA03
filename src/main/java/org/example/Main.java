@@ -206,6 +206,35 @@ public class Main {
         p("");
         administrador.Login();
         administrador.Logout();
+        p("");
+        l("");
+
+        Robo robo = new Robo();
+        robo.MoverParaFrente();
+        robo.MoverParaTras();
+        p("");
+        l("");
+
+        RepositorioCliente repositorio = new RepositorioCliente();
+        Cliente cliente = new Cliente();
+
+        repositorio.Salvar(cliente);
+        repositorio.Buscar(1);
+        p("");
+        l("");
+
+        Spotify spotify = new Spotify();
+        Deezer deezer = new Deezer();
+
+        spotify.Play();
+        spotify.Pause();
+        spotify.Stop();
+        p("");
+        deezer.Play();
+        deezer.Pause();
+        deezer.Stop();
+        l("");
+        System.out.println(":)");
 
     }
 }
